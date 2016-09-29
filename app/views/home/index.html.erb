@@ -1,0 +1,13 @@
+<label for="room_id">Select Room</label>
+<%= select :room, :id, @rooms_arr, {:prompt => "Select"} %>
+
+<div id="calendar"></div>
+
+
+<script type="text/javascript">
+	(function($){
+		$("#room_id").on("change", function(){
+			$.post('/show_calendar', { room_id: this.value });
+		});
+	})(jQuery);
+</script>

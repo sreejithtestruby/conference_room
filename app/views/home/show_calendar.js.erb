@@ -1,0 +1,17 @@
+$('#calendar').fullCalendar('destroy');
+$('#calendar').fullCalendar({
+	header: {
+		left: 'prev,next today',
+		center: 'title',
+		right: 'month'
+	},
+	defaultDate: new Date(),
+	defaultView: 'month',
+	startEditable: true,
+	editable: true,
+
+ 	events: <%=raw @events_arr %>,
+  color: 'yellow',   // an option!
+  textColor: 'black', // an option!
+
+});
