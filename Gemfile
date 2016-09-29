@@ -15,6 +15,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
 gem 'cancancan'
 gem 'sidekiq'
+gem 'sendgrid-ruby'
 
 gem "pry-rails"
 gem "pry-nav"

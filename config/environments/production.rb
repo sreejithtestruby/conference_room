@@ -78,18 +78,19 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   
   config.app_domain = 'localhost'
+  
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default_url_options = { host: config.app_domain }
   config.action_mailer.smtp_settings = {
-    address: 'smtp.gmail.com', 
+    address: 'smtp.sendgrid.net', 
     port: '587',
     enable_starttls_auto: true,
-    user_name: "sreejithtestruby@gmail.com",
-    password: "sreejith@123",
+    user_name: "app57261926@heroku.com",
+    password: "pdz6drsw5828",
     authentication: :plain,
-    domain: 'gmail.com'
+    domain: 'heroku.com'
   }
 end
